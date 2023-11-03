@@ -1,1 +1,0 @@
-# rentify-frontend
