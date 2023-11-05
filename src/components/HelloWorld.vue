@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    Ovo je moj kod, a banana je {{ status_banane }}
+    Ovo je moj kod, a banana je {{ status_rentify }}
   </div>
 </template>
 
@@ -11,12 +11,12 @@ export default {
     msg: String
   },
   async mounted() {
-    let data = await fetch("http://localhost:3001/banana");
+    let data = await fetch("http://localhost:3001/rentify");
     console.log(await data.json())
   },
   data() {
     let html_varijable = {
-      status_banane: "ne znam"
+      status_rentify: "ne znam"
     }
     return html_varijable;
   }
