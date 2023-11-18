@@ -42,13 +42,15 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     margin: 16px;
+    max-width: 500px; 
+    margin: 0 auto; /* Center the container */
   }
   
   .container-image {
-    width: 100px; /* Adjust the size as needed */
-    height: 100px; /* Adjust the size as needed */
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    margin-right: 16px;
+    margin-right: 8px; /* Reduced margin from 16px to 8px */
     border-radius: 4px;
   }
   
@@ -58,11 +60,11 @@
   
   .container-name {
     font-size: 1.2em;
-    margin-bottom: 8px;
+    margin-bottom: 4px; /* Reduced margin from 8px to 4px */
   }
   
   .container-description {
-    margin-bottom: 16px;
+    margin-bottom: 8px; /* Reduced margin from 16px to 8px */
   }
   
   .container-button {
