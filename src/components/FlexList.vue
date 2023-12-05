@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="flex-list">
       <FlexContainer
         :imageSrc="require('../assets/logo.png')"
         :name="itemNames[0]"
@@ -46,7 +46,14 @@
     },
   };
   </script>
-  
+
+<style>
+  .flex-list {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+</style>
   <style scoped>
   .razmak {
     margin-top: 10px; 

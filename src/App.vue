@@ -1,14 +1,19 @@
 <template>
-  <MainComponent></MainComponent>
+  <div>
+    <NavigationComponent />
+   <FlexList></FlexList>
+  </div>
 </template>
 
 <script>
-import MainComponent from './components/MainComponent.vue'; 
+import FlexList from './components/FlexList.vue'; 
+import NavigationComponent from './components/NavigationComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    MainComponent,
+    NavigationComponent,
+    FlexList,
   },
 };
 </script>
@@ -21,6 +26,5 @@ export default {
   text-align: center;
   color: lightcyan;
   background-color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
