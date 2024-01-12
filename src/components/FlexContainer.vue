@@ -42,17 +42,18 @@ export default {
   border: 1px solid #ddd;
   border-radius: 8px;
   margin: 16px 8px;
-  max-width: 600px; /* Adjusted max-width to 600px */
+  max-width: 600px; 
   margin: 0 auto;
   margin-bottom: 16px;
-  width: 100%; /* Ensure it takes full width */
-  min-width: 45%; /* Ensure it takes at least 45% of the screen */
-  box-sizing: border-box; /* Include padding and border in the width */
+  width: 100%; 
+  min-width: 45%; 
+  box-sizing: border-box; 
+  height: 30vh;
 }
 
 .container-image {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   margin-right: 8px;
   border-radius: 4px;

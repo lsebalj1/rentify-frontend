@@ -50,30 +50,26 @@ export default {
   margin-bottom: 70px;
 }
 
-/* For screens larger than 768px: 2 columns */
 @media (min-width: 768px) {
   .flex-list {
     justify-content: space-between;
-    max-width: 100%; /* Limit to 2 columns per row */
+    max-width: 100%; 
   }
 }
 
-/* For screens between 576px and 768px: 2 columns */
 @media (min-width: 576px) and (max-width: 768px) {
   .flex-list {
     justify-content: space-around;
-    max-width: 90%; /* Limit to 2 columns per row */
+    max-width: 90%; 
   }
 }
 
-/* For small screens (below 576px): 1 column */
 @media (max-width: 576px) {
   .flex-list {
     justify-content: center;
-    max-width: 100%; /* Full width for 1 column */
+    max-width: 100%; 
   }
 
-  /* Optional: Adjust the width of FlexContainer to fit into the column */
   FlexContainer {
     width: 100%;
   }
