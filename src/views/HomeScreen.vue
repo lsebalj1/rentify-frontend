@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import FlexList from './components/FlexList.vue'; 
-import NavigationComponent from './components/NavigationComponent.vue';
+import FlexList from '../components/FlexList.vue'; 
+import NavigationComponent from '../components/NavigationComponent.vue';
 
 export default {
   name: 'HomeScreen',

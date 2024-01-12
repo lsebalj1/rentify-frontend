@@ -1,62 +1,81 @@
 <template>
-    <div class="flex-list">
-      <FlexContainer
-        :imageSrc="require('../assets/logo.png')"
-        :name="itemNames[0]"
-        :description="itemDescriptions[0]"
-      />
-      <div class="razmak"></div>
-      <FlexContainer
-        :imageSrc="require('../assets/logo.png')"
-        :name="itemNames[1]"
-        :description="itemDescriptions[1]"
-      />
-      <div class="razmak"></div>
-      <FlexContainer
-        :imageSrc="require('../assets/logo.png')"
-        :name="itemNames[2]"
-        :description="itemDescriptions[2]"
-      />
-      <div class="razmak"></div>
-      <FlexContainer
-        :imageSrc="require('../assets/logo.png')"
-        :name="itemNames[3]"
-        :description="itemDescriptions[3]"
-      />
-    </div>
+  <div class="flex-list">
+    <FlexContainer
+      v-for="(item, index) in items"
+      :key="index"
+      :imageSrc="require('../assets/logo.png')"
+      :name="item.name"
+      :description="item.description"
+    />
+  </div>
 </template>
-  
-  <script>
-  import FlexContainer from './FlexContainer.vue';
-  
-  export default {
-    components: {
-      FlexContainer,
-    },
-    data() {
-      return {
-        itemNames: ['Item 1', 'Item 2', 'Item 3', 'Item 4'],
-        itemDescriptions: [
-          'Item 1',
-          'Item 2',
-          'Item 3',
-          'Item 4',
-        ],
-      };
-    },
-  };
-  </script>
 
-<style>
+<script>
+import FlexContainer from './FlexContainer.vue';
+
+export default {
+  components: {
+    FlexContainer,
+  },
+  data() {
+    return {
+      items: [
+        { name: 'Item 1', description: 'Description 1' },
+        { name: 'Item 2', description: 'Description 2' },
+        { name: 'Item 3', description: 'Description 3' },
+        { name: 'Item 4', description: 'Description 4' },
+        { name: 'Item 5', description: 'Description 5' },
+        { name: 'Item 6', description: 'Description 6' },
+        { name: 'Item 7', description: 'Description 7' },
+        { name: 'Item 8', description: 'Description 8' },
+        { name: 'Item 9', description: 'Description 9' },
+        { name: 'Item 10', description: 'Description 10' },
+        { name: 'Item 11', description: 'Description 11' },
+        { name: 'Item 12', description: 'Description 12' },
+        { name: 'Item 13', description: 'Description 13' },
+        { name: 'Item 14', description: 'Description 14' },
+        { name: 'Item 15', description: 'Description 15' },
+      ],
+    };
+  },
+};
+</script>
+
+<style scoped>
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+/* For screens larger than 768px: 2 columns */
+@media (min-width: 768px) {
   .flex-list {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    justify-content: space-between;
+    max-width: 100%; /* Limit to 2 columns per row */
+  }
+}
+
+/* For screens between 576px and 768px: 2 columns */
+@media (min-width: 576px) and (max-width: 768px) {
+  .flex-list {
+    justify-content: space-around;
+    max-width: 90%; /* Limit to 2 columns per row */
+  }
+}
+
+/* For small screens (below 576px): 1 column */
+@media (max-width: 576px) {
+  .flex-list {
+    justify-content: center;
+    max-width: 100%; /* Full width for 1 column */
   }
 
-</style>
-  <style scoped>
-  .razmak {
-    margin-top: 10px; 
+  /* Optional: Adjust the width of FlexContainer to fit into the column */
+  FlexContainer {
+    width: 100%;
   }
-  </style>
-  
+}
+</style>
