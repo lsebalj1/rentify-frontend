@@ -1,10 +1,10 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="px-2 navbar navbar-expand-lg navbar-light custom-navbar">
     <router-link class="navbar-brand" to="/">Your Logo</router-link>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mr-r"> 
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav"> 
         <li class="nav-item" v-for="(link, index) in links" :key="index">
-          <router-link :to="link.to" class="nav-link">{{ link.label }}</router-link>
+          <router-link :to="link.to" class="nav-link text-light">{{ link.label }}</router-link>
         </li>
       </ul>
       <button
@@ -25,16 +25,17 @@
 <script>
 // Import Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-// Import Bootstrap JS 
+// Import Bootstrap JS i Popper.js
 import 'bootstrap';  
+import 'popper.js';
 
 export default {
   data() {
     return {
       links: [
-        { label: 'Site 1', to: '/' },
-        { label: 'Site 2', to: '/' },
-        { label: 'Site 3', to: '/' },
+        { label: 'Smjestaji', to: '/' },
+        { label: 'Najam', to: '/' },
+        { label: 'Ostalo', to: '/' },
       ],
     };
   },
@@ -42,5 +43,7 @@ export default {
 </script>
 
 <style scoped>
-
+.custom-navbar {
+  background-color: #235762; 
+}
 </style>

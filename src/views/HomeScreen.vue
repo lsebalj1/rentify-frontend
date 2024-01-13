@@ -3,8 +3,8 @@
       <NavigationComponent />
   
       <HomeScreenBackgroundImage>
-        <h1>Welcome to the Home Screen!</h1>
-        <p>This is your home screen content.</p>
+        <h1>DOBRODOŠLI U SVIJET UDOBNOSTI!</h1>
+        <p>VAŠ PUT DO SAVRŠENOG SMJEŠTAJA ILI NAJMA POČINJE OVDJE</p>
       </HomeScreenBackgroundImage>
     </div>
   </template>
