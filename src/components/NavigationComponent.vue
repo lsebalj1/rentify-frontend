@@ -1,6 +1,6 @@
 <template>
   <nav class="px-2 navbar navbar-expand-lg navbar-light custom-navbar">
-    <router-link class="navbar-brand" to="/">Your Logo</router-link>
+    <router-link class="navbar-brand" to="home">Logo</router-link>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav"> 
         <li class="nav-item" v-for="(link, index) in links" :key="index">
@@ -23,19 +23,16 @@
 </template>
 
 <script>
-// Import Bootstrap CSS
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-// Import Bootstrap JS i Popper.js
-import 'bootstrap';  
-import 'popper.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default {
   data() {
     return {
       links: [
-        { label: 'Smjestaji', to: '/' },
-        { label: 'Najam', to: '/' },
-        { label: 'Ostalo', to: '/' },
+        { label: 'Home', to: 'home' }, 
+        { label: 'Smjestaji', to: 'smjestaji' },
+        { label: 'Najam', to: 'najam' },
+        //{ label: 'Ostalo', to: 'ostalo' },
       ],
     };
   },

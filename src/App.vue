@@ -1,30 +1,19 @@
 <template>
   <div>
-    <NavigationComponent />
-   <FlexList></FlexList>
+    <HomeScreen />
   </div>
 </template>
 
 <script>
-import FlexList from './components/FlexList.vue'; 
-import NavigationComponent from './components/NavigationComponent.vue';
+import HomeScreen from './views/HomeScreen.vue';
 
 export default {
   name: 'App',
   components: {
-    NavigationComponent,
-    FlexList,
+    HomeScreen,
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: lightcyan;
-  background-color: #2c3e50;
-}
 </style>

@@ -1,10 +1,9 @@
 <template>
-    <div>
+    <div id="app">
       <NavigationComponent />
   
       <HomeScreenBackgroundImage>
-        <h1>DOBRODOŠLI U SVIJET UDOBNOSTI!</h1>
-        <p>VAŠ PUT DO SAVRŠENOG SMJEŠTAJA ILI NAJMA POČINJE OVDJE</p>
+       <WelcomeSection></WelcomeSection>
       </HomeScreenBackgroundImage>
     </div>
   </template>
@@ -12,11 +11,13 @@
   <script>
   import NavigationComponent from '../components/NavigationComponent.vue';
   import HomeScreenBackgroundImage from '../components/HomeScreenBackgroundImage.vue';
+  import WelcomeSection from '../components/WelcomeSection.vue';
   
   export default {
     components: {
       NavigationComponent,
       HomeScreenBackgroundImage,
+      WelcomeSection,
     },
   };
   </script>
