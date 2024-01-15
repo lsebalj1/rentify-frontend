@@ -1,5 +1,6 @@
 <template>
   <div>
+    //nadi kako router injecta viewove u taj div
     <HomeScreen />
   </div>
 </template>

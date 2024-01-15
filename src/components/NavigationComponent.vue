@@ -1,10 +1,10 @@
 <template>
   <nav class="px-2 navbar navbar-expand-lg navbar-light custom-navbar">
-    <router-link class="navbar-brand" to="home">Logo</router-link>
+    <router-link class="navbar-brand" to="home">Your Logo</router-link>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav"> 
         <li class="nav-item" v-for="(link, index) in links" :key="index">
-          <router-link :to="link.to" class="nav-link text-light">{{ link.label }}</router-link>
+          <router-link :to="link.to" class="nav-link text-light" @click="debugClick">{{ link.label }}</router-link>
         </li>
       </ul>
       <button
@@ -35,6 +35,13 @@ export default {
         //{ label: 'Ostalo', to: 'ostalo' },
       ],
     };
+  },
+  methods: {
+    debugClick() { 
+      // eslint-disable-next-line
+      debugger
+      console.log('Link clicked!');
+    },
   },
 };
 </script>
