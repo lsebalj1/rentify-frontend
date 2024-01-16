@@ -37,7 +37,7 @@ export default {
 <style scoped>
 .flexible-container {
   display: flex;
-  align-items: center;
+  align-items: start;
   padding: 16px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -53,10 +53,11 @@ export default {
 
 .container-image {
   width: 200px;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
   margin-right: 8px;
   border-radius: 4px;
+  align-self: center; 
 }
 
 .container-content {
@@ -65,11 +66,14 @@ export default {
 
 .container-name {
   font-size: 1.2em;
-  margin-bottom: 4px;
+  margin-bottom: 40px;
+  margin-top: 0; 
+  margin-right: 8px;
 }
 
 .container-description {
   margin-bottom: 8px;
+  margin-right: 8px;
 }
 
 .container-button {

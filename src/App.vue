@@ -1,24 +1,28 @@
 <template>
   <div id="app">
     <NavigationComponent />
-
-    <HomeScreenBackgroundImage>
+    
+   <!-- <HomeScreenBackgroundImage>
      <WelcomeSection></WelcomeSection>
-    </HomeScreenBackgroundImage>
+    </HomeScreenBackgroundImage> -->
+    <FlexList></FlexList>
+
   </div>
 </template>
 
 <script>
+import FlexList from './components/FlexList.vue'; 
 import NavigationComponent from './components/NavigationComponent.vue';
-import HomeScreenBackgroundImage from './components/HomeScreenBackgroundImage.vue';
-import WelcomeSection from './components/WelcomeSection.vue';
+//import HomeScreenBackgroundImage from './components/HomeScreenBackgroundImage.vue';
+//import WelcomeSection from './components/WelcomeSection.vue';
 
 export default {
   name: 'App',
   components: {
     NavigationComponent,
-    HomeScreenBackgroundImage,
-    WelcomeSection,
+    FlexList,
+    //HomeScreenBackgroundImage,
+    //WelcomeSection,
   },
 };
 </script>

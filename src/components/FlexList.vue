@@ -3,7 +3,7 @@
     <FlexContainer
       v-for="(item, index) in items"
       :key="index"
-      :imageSrc="require('../assets/logo.png')"
+      :imageSrc="require(`../assets/${item.image}`)"
       :name="item.name"
       :description="item.description"
     />
@@ -20,21 +20,20 @@ export default {
   data() {
     return {
       items: [
-        { name: 'Item 1', description: 'Description 1' },
-        { name: 'Item 2', description: 'Description 2' },
-        { name: 'Item 3', description: 'Description 3' },
-        { name: 'Item 4', description: 'Description 4' },
-        { name: 'Item 5', description: 'Description 5' },
-        { name: 'Item 6', description: 'Description 6' },
-        { name: 'Item 7', description: 'Description 7' },
-        { name: 'Item 8', description: 'Description 8' },
-        { name: 'Item 9', description: 'Description 9' },
-        { name: 'Item 10', description: 'Description 10' },
-        { name: 'Item 11', description: 'Description 11' },
-        { name: 'Item 12', description: 'Description 12' },
-        { name: 'Item 13', description: 'Description 13' },
-        { name: 'Item 14', description: 'Description 14' },
-        { name: 'Item 15', description: 'Description 15' },
+        { name: 'App Deluxe Apartment', description: 'Description 1', image: 'background.jpg' },
+        { name: 'Cozy Mountain Retreat Suites', description: 'Description 2', image: 'background.jpg' },
+        { name: 'Luxury Urban Escape Residences', description: 'Description 3', image: 'background.jpg' },
+        { name: 'Tranquil Riverside Haven Apartments', description: 'Description 4', image: 'background.jpg' },
+        { name: 'Seaside Elegance Suites', description: 'Description 5', image: 'background.jpg' },
+        { name: 'City Chic Hideaway Studios', description: 'Description 6', image: 'background.jpg' },
+        { name: 'App Rustic Countryside Cottage', description: 'Description 7', image: 'background.jpg' },
+        { name: 'Serenity View Boutique Residences', description: 'Description 8', image: 'background.jpg' },
+        { name: 'Mountain Lodge Retreat', description: 'Description 9', image: 'background.jpg' },
+        { name: 'App Skyline Penthouse Suite', description: 'Description 10', image: 'background.jpg' },
+        { name: 'Enchanting Forest Hideout Studios', description: 'Description 11', image: 'background.jpg' },
+        { name: 'Sea Breeze Serendipity Apartments', description: 'Description 12', image: 'background.jpg' },
+        { name: 'Elegant Cityscape Loft', description: 'Description 13', image: 'background.jpg' },
+        { name: 'Waterside Serenity Suites', description: 'Description 14', image: 'background.jpg' },
       ],
     };
   },
@@ -45,9 +44,18 @@ export default {
 .flex-list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 70px;
+}
+
+.FlexContainer {
+    white-space: nowrap;
+}
+
+.item-name {
+  white-space: nowrap;
 }
 
 @media (min-width: 768px) {
@@ -70,8 +78,9 @@ export default {
     max-width: 100%; 
   }
 
-  FlexContainer {
+  .FlexContainer {
     width: 100%;
   }
+ 
 }
 </style>
