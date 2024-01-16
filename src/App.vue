@@ -1,20 +1,24 @@
 <template>
-  <div>
-    //nadi kako router injecta viewove u taj div
-    <HomeScreen />
+  <div id="app">
+    <NavigationComponent />
+
+    <HomeScreenBackgroundImage>
+     <WelcomeSection></WelcomeSection>
+    </HomeScreenBackgroundImage>
   </div>
 </template>
 
 <script>
-import HomeScreen from './views/HomeScreen.vue';
+import NavigationComponent from './components/NavigationComponent.vue';
+import HomeScreenBackgroundImage from './components/HomeScreenBackgroundImage.vue';
+import WelcomeSection from './components/WelcomeSection.vue';
 
 export default {
   name: 'App',
   components: {
-    HomeScreen,
+    NavigationComponent,
+    HomeScreenBackgroundImage,
+    WelcomeSection,
   },
 };
 </script>
-
-<style>
-</style>

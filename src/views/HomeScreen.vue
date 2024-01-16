@@ -14,6 +14,7 @@
   import WelcomeSection from '../components/WelcomeSection.vue';
   
   export default {
+    name: 'HomeScreen',
     components: {
       NavigationComponent,
       HomeScreenBackgroundImage,
