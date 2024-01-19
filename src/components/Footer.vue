@@ -1,4 +1,3 @@
-<!-- SmallFooter.vue -->
 <template>
     <footer class="footer">
       <div class="container">
@@ -22,7 +21,8 @@
   
   <style scoped>
   .footer {
-    background-color: black;
+    background-color: rgba(210, 203, 203, 0.9);
+    color: #235762;
     padding: 10px 0;
     text-align: center;
     position: fixed;

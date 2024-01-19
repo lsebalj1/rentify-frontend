@@ -6,12 +6,11 @@
   
   <script>
   import FlexList from '../components/FlexList.vue'; 
-  import NavigationComponent from '../components/NavigationComponent.vue';
   
   export default {
     name: 'NajamScreen',
     components: {
-      NavigationComponent,
+
       FlexList,
     },
   };

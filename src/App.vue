@@ -2,7 +2,6 @@
   <div id="app">
     <NavigationComponent />
     <router-view/>
-
   </div>
 </template>
 
@@ -17,7 +16,6 @@ export default {
   name: 'App',
   components: {
     NavigationComponent,
-    //FlexList,
     HomeScreenBackgroundImage,
     WelcomeSection,
     HomeScreenContainers,
