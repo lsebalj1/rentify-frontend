@@ -39,7 +39,7 @@ export default {
   methods: {
     debugClick() { 
       // eslint-disable-next-line
-      debugger
+      //debugger
       console.log('Link clicked!');
     },
   },

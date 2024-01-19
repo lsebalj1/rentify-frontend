@@ -1,18 +1,15 @@
 <template>
-    <div>sdsdasdas
-      <NavigationComponent />
+    <div>
      <FlexList></FlexList>
     </div>
   </template>
   
   <script>
   import FlexList from '../components/FlexList.vue'; 
-  import NavigationComponent from '../components/NavigationComponent.vue';
   
   export default {
     name: 'SmjestajiScreen',
     components: {
-      NavigationComponent,
       FlexList,
     },
   };

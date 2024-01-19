@@ -1,6 +1,5 @@
 <template>
     <div>
-      <NavigationComponent />
      <FlexList></FlexList>
     </div>
   </template>
