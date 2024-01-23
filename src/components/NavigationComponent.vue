@@ -1,6 +1,6 @@
 <template>
   <nav class="px-2 navbar navbar-expand-lg navbar-light custom-navbar">
-    <router-link class="navbar-brand" to="home">Your Logo</router-link>
+    <router-link class="navbar-brand" to="home">Rentify</router-link>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav"> 
         <li class="nav-item" v-for="(link, index) in links" :key="index">
@@ -50,4 +50,11 @@ export default {
 .custom-navbar {
   background-color: #235762; 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+.navbar-brand {
+    font-family: 'Nova Square', sans-serif;
+    color: lightcyan;
+}
+
 </style>
