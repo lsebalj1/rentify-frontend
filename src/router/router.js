@@ -6,9 +6,9 @@ import NajamScreen from '../views/NajamScreen.vue';
 // routes
 const routes = [
     { path: '/', redirect: { name: 'home' } },
-    { path: '/home', name: 'home', component: HomeScreen },
-    { path: '/smjestaji', name: 'smjestaji', component: SmjestajiScreen },
-    { path: '/najam', name: 'najam', component: NajamScreen },
+    { path: '/home', name: 'home', component: HomeScreen, meta: {title: "Rentify"}},
+    { path: '/smjestaji', name: 'smjestaji', component: SmjestajiScreen, meta: {title: "Rentify - Smjestaji"} },
+    { path: '/najam', name: 'najam', component: NajamScreen, meta: {title: "Rentify - Najam"} },
 ];
 
 // router
@@ -17,6 +17,10 @@ const router = createRouter({
     routes,
 });
 
+router.beforeEach((to, from, next) => {
+    document.title = `${to.meta.title}`;
+    next();
+});
+
 export default router;
 
-//nadi kako router injecta viewove u taj div

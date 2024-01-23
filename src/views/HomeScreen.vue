@@ -5,7 +5,7 @@
        <WelcomeSection></WelcomeSection>
       </HomeScreenBackgroundImage>
       <HomeScreenContainers></HomeScreenContainers>
-      <Footer></Footer>
+      <FooterComponent></FooterComponent>
     </div>
   </template>
   
@@ -13,7 +13,7 @@
   import HomeScreenBackgroundImage from '../components/HomeScreenBackgroundImage.vue';
   import WelcomeSection from '../components/WelcomeSection.vue';
   import HomeScreenContainers from '../components/HomeScreenContainers.vue';
-  import Footer from '../components/Footer.vue';
+  import FooterComponent from '../components/FooterComponent.vue';
   
   export default {
     name: 'HomeScreen',
@@ -21,7 +21,7 @@
       HomeScreenBackgroundImage,
       WelcomeSection,
       HomeScreenContainers,
-      Footer,
+      FooterComponent,
     },
   };
   </script>
