@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
 .custom-navbar {
-  background-color: #235762; 
+  background-color: #1e434a; 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');

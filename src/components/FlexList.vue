@@ -48,6 +48,7 @@ export default {
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 70px;
+  background-color: rgb(249, 249, 249);
 }
 
 .FlexContainer {

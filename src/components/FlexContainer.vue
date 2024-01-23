@@ -29,6 +29,7 @@ export default {
     buttonClick() {
       // Handle button click
       console.log('Button clicked!');
+      this.$router.push('/odabrani-smjestaj');
     },
   },
 };
@@ -36,6 +37,7 @@ export default {
 
 <style scoped>
 .flexible-container {
+  background-color: rgba(135, 200, 203, 0.505);
   display: flex;
   align-items: start;
   padding: 16px;
@@ -49,6 +51,7 @@ export default {
   min-width: 45%; 
   box-sizing: border-box; 
   height: 30vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.237);
 }
 
 .container-image {
@@ -64,22 +67,27 @@ export default {
   flex-grow: 1;
 }
 
-.container-name {
-  font-size: 1.2em;
-  margin-bottom: 40px;
-  margin-top: 0; 
+.container-name, .container-description {
+  text-align: justify;
   margin-right: 8px;
 }
 
+.container-name {
+  font-size: 1em;
+  margin-bottom: 40px;
+  margin-top: 0; 
+  
+}
+
 .container-description {
+  font-size: 0.6em;
   margin-bottom: 8px;
-  margin-right: 8px;
 }
 
 .container-button {
   padding: 8px 16px;
-  background-color: #3498db;
-  color: #fff;
+  background-color: #173c43;
+  color: lightcyan;
   border: none;
   border-radius: 4px;
   cursor: pointer;

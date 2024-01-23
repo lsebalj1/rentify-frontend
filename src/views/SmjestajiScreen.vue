@@ -22,8 +22,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: lightcyan;
-    background-color: #2c3e50;
   }
   </style>    
   

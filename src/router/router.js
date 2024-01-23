@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeScreen from '../views/HomeScreen.vue';
 import SmjestajiScreen from '../views/SmjestajiScreen.vue';
 import NajamScreen from '../views/NajamScreen.vue';
+import OdabraniSmjestajScreen from '../views/OdabraniSmjestajScreen'
 
 // routes
 const routes = [
@@ -9,6 +10,7 @@ const routes = [
     { path: '/home', name: 'home', component: HomeScreen, meta: {title: "Rentify"}},
     { path: '/smjestaji', name: 'smjestaji', component: SmjestajiScreen, meta: {title: "Rentify - Smjestaji"} },
     { path: '/najam', name: 'najam', component: NajamScreen, meta: {title: "Rentify - Najam"} },
+    { path: '/odabrani-smjestaj', name: 'odabrani-smjestaj', component: OdabraniSmjestajScreen, meta: {title: "Rentify - Smjestaji"} },
 ];
 
 // router
