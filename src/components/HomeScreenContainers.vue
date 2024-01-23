@@ -1,27 +1,28 @@
 <template>
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="image-container" :style="{ backgroundImage: 'url(' + require('../assets/background.jpg') + ')' }">
-            <div class="overlay">
-              <div class="text">
-                <h2>Smjestaji</h2>
-              </div>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <router-link to="/smjestaji" class="image-container" :style="{ backgroundImage: 'url(' + require('../assets/hotel.jpg') + ')' }">
+          <div class="overlay">
+            <div class="text">
+              <h2>Smještaji</h2>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="image-container" :style="{ backgroundImage: 'url(' + require('../assets/background.jpg') + ')' }">
-            <div class="overlay">
-              <div class="text">
-                <h2>Najam</h2>
-              </div>
+        </router-link>
+      </div>
+
+      <div class="col-md-6">
+        <router-link to="/najam" class="image-container" :style="{ backgroundImage: 'url(' + require('../assets/rent.jpg') + ')' }">
+          <div class="overlay">
+            <div class="text">
+              <h2>Najam</h2>
             </div>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
-  </template>
+  </div>
+</template>
   
   <script>
   export default {
@@ -41,6 +42,12 @@
     background-size: cover;
     background-position: center;
     margin-bottom: 30px;
+    display: block; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.237);
+  }
+
+  .image-container:hover {
+    filter: brightness(80%);
   }
   
   .overlay {

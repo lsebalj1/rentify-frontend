@@ -18,13 +18,13 @@
   }
 
   .huge-heading{
-    font-size: 4em; 
+    font-size: 4.1em; 
     color: black;
     font-weight: bold;
   }
   
   .huge-text {
-    font-size: 2em; 
+    font-size: 1.8em; 
     color: black;
     font-weight: bold;
   }

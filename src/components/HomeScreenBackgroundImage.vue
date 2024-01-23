@@ -10,14 +10,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     height: 100vh;
-  
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
     text-align: center;
   }
   </style>
