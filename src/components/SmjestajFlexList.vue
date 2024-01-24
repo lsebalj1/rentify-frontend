@@ -1,6 +1,6 @@
 <template>
   <div class="flex-list">
-    <FlexContainer
+    <SmjestajFlexContainer
       v-for="(item, index) in items"
       :key="index"
       :imageSrc="require(`../assets/${item.image}`)"
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import FlexContainer from './FlexContainer.vue';
+import SmjestajFlexContainer from './SmjestajFlexContainer.vue';
 
 export default {
   components: {
-    FlexContainer,
+    SmjestajFlexContainer,
   },
   data() {
     return {
