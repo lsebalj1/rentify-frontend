@@ -1,14 +1,20 @@
 <template>
-  <div></div>
+  <OdabraniSmjestajScreenSlike></OdabraniSmjestajScreenSlike>
 </template>
-  
-  <script>
-  export default {
-    name: "OdabraniSmjestajScreen",
-  };
-  </script>
-  
-  <style>
-  
-  </style>
+
+<script>
+import OdabraniSmjestajScreenSlike from '../components/OdabraniSmjestajScreenSlike.vue';
+
+export default {
+  name: "OdabraniSmjestajScreen",
+  components: {
+    OdabraniSmjestajScreenSlike,
+  },
+};
+</script>
+
+<style scoped>
+/* Add any additional styling as needed */
+</style>
+
   
