@@ -1,6 +1,6 @@
 <template>
     <div class="flex-list">
-      <FlexContainer
+      <DNajamFlexContainer
         v-for="(item, index) in items"
         :key="index"
         :imageSrc="require(`../assets/${item.image}`)"
@@ -11,11 +11,11 @@
   </template>
   
   <script>
-  import FlexContainer from './NajamFlexContainer.vue';
+  import DNajamFlexContainer from './DNajamFlexContainer.vue';
   
   export default {
     components: {
-      FlexContainer,
+      DNajamFlexContainer,
     },
     data() {
       return {
@@ -51,7 +51,7 @@
     background-color: rgb(249, 249, 249);
   }
   
-  .FlexContainer {
+  .DNajamFlexContainer {
       white-space: nowrap;
   }
   

@@ -29,7 +29,7 @@
       buttonClick() {
         // Handle button click
         console.log('Button clicked!');
-        this.$router.push('/odabrani-najam');
+        this.$router.push('/odabrani-d-najam');
       },
     },
   };

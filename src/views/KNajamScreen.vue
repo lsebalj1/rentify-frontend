@@ -1,16 +1,16 @@
 <template>
     <div>
-     <SmjestajFlexList></SmjestajFlexList>
+     <KNajamFlexList></KNajamFlexList>
     </div>
   </template>
   
   <script>
-  import SmjestajFlexList from '../components/SmjestajFlexList.vue'; 
+  import KNajamFlexList from '../components/KNajamFlexList.vue'; 
   
   export default {
-    name: 'SmjestajiScreen',
+    name: 'KNajamScreen',
     components: {
-      SmjestajFlexList,
+      KNajamFlexList,
     },
   };
   </script>

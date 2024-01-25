@@ -6,22 +6,22 @@
         <button class="rezerviraj-button" @click="navigate" role="link"> Rezerviraj</button>
       </router-link>
     </div>
-    <OdabraniSmjestajScreenSlike></OdabraniSmjestajScreenSlike>
-    <OdabraniSmjestajDescription></OdabraniSmjestajDescription>
+    <OdabraniKNajamScreenSlike></OdabraniKNajamScreenSlike>
+    <OdabraniKNajamDescription></OdabraniKNajamDescription>
   </div>
 </template>
 
 <script>
 //import BootstrapCalendar from '../components/BootstrapCalendar.vue';
-import OdabraniSmjestajDescription from '../components/OdabraniSmjestajDescription.vue';
-import OdabraniSmjestajScreenSlike from '../components/OdabraniSmjestajScreenSlike.vue';
+import OdabraniKNajamDescription from '../components/OdabraniKNajamDescription.vue';
+import OdabraniKNajamScreenSlike from '../components/OdabraniKNajamScreenSlike.vue';
 
 
 export default {
-  name: "OdabraniSmjestajScreen",
+  name: "OdabraniKNajamScreen",
   components: {
-    OdabraniSmjestajScreenSlike,
-    OdabraniSmjestajDescription,
+    OdabraniKNajamScreenSlike,
+    OdabraniKNajamDescription,
     //BootstrapCalendar,
   },
   data() {

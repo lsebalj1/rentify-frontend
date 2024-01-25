@@ -7,21 +7,21 @@
             </router-link>
     </div>
       
-      <OdabraniNajamScreenSlike></OdabraniNajamScreenSlike>
-      <OdabraniNajamDescription></OdabraniNajamDescription>
+      <OdabraniDNajamScreenSlike></OdabraniDNajamScreenSlike>
+      <OdabraniDNajamDescription></OdabraniDNajamDescription>
     </div>
   </template>
   
   <script>
 
-import OdabraniNajamScreenSlike from '@/components/OdabraniNajamScreenSlike.vue';
-import OdabraniNajamDescription from '@/components/OdabraniNajamDescription.vue';
+import OdabraniDNajamScreenSlike from '@/components/OdabraniDNajamScreenSlike.vue';
+import OdabraniDNajamDescription from '@/components/OdabraniDNajamDescription.vue';
 
   export default {
-    name: "OdabraniSmjestajScreen",
+    name: "OdabraniDNajamScreen",
     components: {
-    OdabraniNajamScreenSlike,
-    OdabraniNajamDescription
+      OdabraniDNajamScreenSlike,
+      OdabraniDNajamDescription
 },
     data() {
       return {

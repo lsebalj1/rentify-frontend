@@ -1,16 +1,16 @@
 <template>
     <div>
-     <NajamFlexList></NajamFlexList>
+     <DNajamFlexList></DNajamFlexList>
     </div>
   </template>
   
   <script>
-  import NajamFlexList from '../components/NajamFlexList.vue'; 
+  import DNajamFlexList from '../components/DNajamFlexList.vue'; 
   
   export default {
-    name: 'NajamScreen',
+    name: 'DNajamScreen',
     components: {
-      NajamFlexList,
+      DNajamFlexList,
     },
   };
   </script>

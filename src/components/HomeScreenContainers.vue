@@ -2,20 +2,20 @@
   <div class="container my-5">
     <div class="row">
       <div class="col-md-6">
-        <router-link to="/smjestaji" class="image-container" :style="{ backgroundImage: 'url(' + require('../assets/hotel.jpg') + ')' }">
+        <router-link to="/k-najam" class="image-container" :style="{ backgroundImage: 'url(' + require('../assets/hotel.jpg') + ')' }">
           <div class="overlay">
             <div class="text">
-              <h2>Smještaji</h2>
+              <h2>Kratkoročno</h2>
             </div>
           </div>
         </router-link>
       </div>
 
       <div class="col-md-6">
-        <router-link to="/najam" class="image-container" :style="{ backgroundImage: 'url(' + require('../assets/rent.jpg') + ')' }">
+        <router-link to="/d-najam" class="image-container" :style="{ backgroundImage: 'url(' + require('../assets/rent.jpg') + ')' }">
           <div class="overlay">
             <div class="text">
-              <h2>Najam</h2>
+              <h2>Dugoročno</h2>
             </div>
           </div>
         </router-link>

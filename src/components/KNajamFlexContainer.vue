@@ -5,7 +5,7 @@
       <h2 class="container-name">{{ name }}</h2>
       <p class="container-description">{{ description }}</p>
     </div>
-    <button class="container-button" @click="buttonClick">Visit</button>
+    <button class="container-button" @click="buttonClick">Pogledaj</button>
   </div>
 </template>
 
@@ -29,7 +29,7 @@ export default {
     buttonClick() {
       // Handle button click
       console.log('Button clicked!');
-      this.$router.push('/odabrani-smjestaj');
+      this.$router.push('/odabrani-k-najam');
     },
   },
 };

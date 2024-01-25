@@ -1,6 +1,6 @@
 <template>
   <div class="flex-list">
-    <SmjestajFlexContainer
+    <KNajamFlexContainer
       v-for="(item, index) in items"
       :key="index"
       :imageSrc="require(`../assets/${item.image}`)"
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import SmjestajFlexContainer from './SmjestajFlexContainer.vue';
+import KNajamFlexContainer from './KNajamFlexContainer.vue';
 
 export default {
   components: {
-    SmjestajFlexContainer,
+    KNajamFlexContainer,
   },
   data() {
     return {
@@ -51,7 +51,7 @@ export default {
   background-color: rgb(249, 249, 249);
 }
 
-.FlexContainer {
+.KNajamFlexContainer {
     white-space: nowrap;
 }
 

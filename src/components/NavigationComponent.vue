@@ -30,8 +30,8 @@ export default {
     return {
       links: [
         { label: 'Home', to: 'home' }, 
-        { label: 'Smjestaji', to: 'smjestaji' },
-        { label: 'Najam', to: 'najam' },
+        { label: 'Kratkoročno', to: 'k-najam' },
+        { label: 'Dugoročno', to: 'd-najam' },
         //{ label: 'Ostalo', to: 'ostalo' },
       ],
     };
