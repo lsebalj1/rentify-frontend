@@ -5,7 +5,7 @@
         <h2 class="container-name">{{ name }}</h2>
         <p class="container-description">{{ description }}</p>
       </div>
-      <button class="container-button" @click="buttonClick">Click me</button>
+      <button class="container-button" @click="buttonClick">Visit</button>
     </div>
   </template>
   

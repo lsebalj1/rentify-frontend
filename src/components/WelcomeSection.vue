@@ -2,7 +2,7 @@
     <div class="welcome-section">
       <div class="background-box">
         <h1 class="huge-heading">DOBRODOŠLI U SVIJET UDOBNOSTI</h1>
-        <p class="huge-text">VAŠ PUT DO SAVRŠENOG SMJEŠTAJA ILI NAJMA POČINJE OVDJE</p>
+        <p class="huge-text">VAŠ PUT DO SAVRŠENOG SMJEŠTAJA ILI ŽELJENOG NAJMA POČINJE OVDJE</p>
       </div>
     </div>
   </template>
