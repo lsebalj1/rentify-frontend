@@ -1,0 +1,3 @@
+email: luka@email.com
+password: luka
+domain: rentify-surge.surge.sh
